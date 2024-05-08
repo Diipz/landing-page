@@ -5,13 +5,14 @@ import Typography from '@mui/material/Typography';
 
 
 
+
 export default function Header() {
   return (
     <>
       <Box className="header-container">
         <div className="icon-container">
           <HexagonRoundedIcon className="hexagon" sx={{
-            fontSize: 100
+            fontSize: 80
           }} />
           <h1>
             D
