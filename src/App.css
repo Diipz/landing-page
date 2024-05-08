@@ -1,6 +1,7 @@
 html {
   --primary-color: #0a192f;
   --secondary-color: #64ffda; 
+  --white-slate: #ccd6f6;
   scrollbar-width: thin;
   scrollbar-color: #495670 #0a192f;
 }

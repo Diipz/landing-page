@@ -3,6 +3,7 @@ import Header from "./assets/components/Header"
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
+import EmailBanner from "./assets/components/EmailBanner";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header />
+      <EmailBanner />
     </ThemeProvider>
   )
 }
