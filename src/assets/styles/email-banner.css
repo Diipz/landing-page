@@ -32,9 +32,9 @@ ul {
 }
 
 .MuiButtonBase-root.MuiMenuItem-root {
-    color: var(--secondary-color);
+    color: var(--white-slate);
 }
 
 .MuiButtonBase-root.MuiMenuItem-root:hover {
-    text-decoration: underline;
+    color: var(--secondary-color);
 }
