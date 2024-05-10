@@ -40,9 +40,7 @@ function App() {
           <EmailBanner />
           <LogoBanner />
         </>
-      ) : (
-        null
-      )}
+      ) : null }
     </ThemeProvider>
   )
 }

@@ -27,3 +27,14 @@
     background-color: var(--white-slate);
 }
 
+ul {
+    background-color: #112240;
+}
+
+.MuiButtonBase-root.MuiMenuItem-root {
+    color: var(--secondary-color);
+}
+
+.MuiButtonBase-root.MuiMenuItem-root:hover {
+    text-decoration: underline;
+}
