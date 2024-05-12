@@ -38,7 +38,7 @@ export default function Header() {
           <HexagonRoundedIcon className="hexagon" sx={{
             fontSize: 80
           }} />
-          <h1>
+          <h1 className="logo-letter">
             D
           </h1>
         </div>
@@ -75,10 +75,10 @@ export default function Header() {
           </div>
         ) : (
           <div className="navbar">
-            <Typography variant="h6">About</Typography>
-            <Typography variant="h6">Experience</Typography>
-            <Typography variant="h6">Services</Typography>
-            <Typography variant="h6">Contact</Typography>
+            <Typography variant="h6" className="nav-selections">About</Typography>
+            <Typography variant="h6" className="nav-selections">Experience</Typography>
+            <Typography variant="h6" className="nav-selections">Services</Typography>
+            <Typography variant="h6" className="nav-selections">Contact</Typography>
           </div>
         )}
       </Box>

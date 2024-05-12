@@ -6,8 +6,8 @@
 }
 
 .pharmacy-logo {
-    width: 78px;
-    height: 210px;
+    width: 77px;
+    height: 230px;
 }
 
 
@@ -26,7 +26,6 @@
 }
 
 .banner2:hover {
-    color: var(--secondary-color);
     cursor: pointer;
 }
 

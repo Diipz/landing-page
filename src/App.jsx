@@ -6,10 +6,11 @@ import { ThemeProvider } from "@emotion/react";
 import EmailBanner from "./assets/components/EmailBanner";
 import LogoBanner from "./assets/components/LogoBanner";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import MainContent from "./assets/components/MainContent";
 
 function App() {
 
-  const isTabletScreen = useMediaQuery(`(min-width:801px)`);
+  const isTabletScreen = useMediaQuery(`(min-width:801px) and (min-height:900px)`);
 
   const theme = createTheme({
     palette: {
@@ -27,6 +28,7 @@ function App() {
       ].join(","),
       h6: {
         letterSpacing: "0.02em",
+        fontSize: "1.5rem"
       }
     }
   })
@@ -35,12 +37,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header />
+      <MainContent />
       {isTabletScreen ? (
         <>
           <EmailBanner />
           <LogoBanner />
         </>
-      ) : null }
+      ) : null}
     </ThemeProvider>
   )
 }
