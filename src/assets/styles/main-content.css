@@ -1,3 +1,7 @@
+* {
+    font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+}
+
 .main-container {
     min-height: 100vh;
     display: block;
@@ -9,8 +13,10 @@
     .main-container {
         margin: 0 3rem;
     }
+    .about-container {
+        flex-wrap: wrap;
+    }
 }
-
 
 .hero-section {
     height: 100vh;
@@ -19,11 +25,12 @@
     flex-direction: column;
     justify-content: center; 
     align-items: flex-start;
-    font-family:'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono';
-    padding-bottom: 225px;
+    padding-bottom: 250px;
     margin: 0px auto;
     overflow: hidden;
+    cursor: pointer;
 }
+
 
 h2.font-calibre,
 h3.font-calibre {
@@ -33,8 +40,10 @@ h3.font-calibre {
 .hero-intro {
     letter-spacing: 0.1rem;
     line-height: 0.1em;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: 300;
     color: var(--secondary-color);
+    font-family:'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono';
 }
 
 .hero-name {
@@ -58,13 +67,99 @@ h3.font-calibre {
     color: var(--grey-slate)
 }
 
+#hero-contact-btn {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    width: 175px;
+    margin-top: 25px;
+    margin-left: 3px;
+    padding: 5px 0;
+    text-transform: none;
+    font-size: larger;
+    letter-spacing: 0.07rem;
+    transition: box-shadow 0.4s, transform 0.4s
+}
+
+#hero-contact-btn:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px;
+    transform: translate(-3px, -3px);
+}
 
 
 .about {
-    height: 100vh;
-    width: 100%;
+    max-width: 1000px;
+    display: block;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+#about-heading {
+    position: relative;
+    font-size: 2.1rem;
+    font-weight: 700;
+    font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    color: var(--white-slate);
+}
+
+#about-heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% - 170px);
+    height: 1px;
+    right: 0;
+    top: 50%;
+    background-color: var(--grey-slate);
+}
+
+.about-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkmagenta
+    justify-content: space-around;
+    gap: 3.2rem;
+    margin-top: 2rem;
+}
+
+div>p {
+    font-size: 18px;
+    color: var(--grey-slate);
+    margin: 0 0 18px;
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+img.portrait {
+    min-width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 7px 10px auto 0px;
+    overflow: clip;
+    filter: invert(2%) sepia(97%) saturate(876%) hue-rotate(79deg) brightness(103%) contrast(100%);
+    transition: box-shadow 0.4s, transform 0.4s;
+}
+
+img.portrait:hover {
+    transform: translate(-3px, -3px);
+}
+
+#portrait-wrapper {
+    position: relative;
+    min-width: 210px;
+    height: 200px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#portrait-frame {
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border: solid 2px var(--secondary-color);
+    border-radius: 5px;
+    top: 17px;
+    left: 10px;
+    z-index: -1;
 }
