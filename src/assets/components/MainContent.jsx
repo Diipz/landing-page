@@ -17,10 +17,13 @@ export default function MainContent() {
         <Typography variant="h5" className="hero-description">
         I specialize in chronic disease management offering contract services to general practices. With a focus on developing personalized care plans, medication management, patient education and overall health promotion.
         </Typography>
+        <Button variant="outlined" disableRipple id="hero-contact-btn">
+          Contact Me
+        </Button>
       </section>
-      <section className="about">
+      <section className="about" >
         <Typography variant="h5">
-          About me
+          About Me
         </Typography>
       </section>
     </div>
