@@ -28,7 +28,6 @@
     padding-bottom: 250px;
     margin: 0px auto;
     overflow: hidden;
-    cursor: pointer;
 }
 
 
@@ -67,7 +66,7 @@ h3.font-calibre {
     color: var(--grey-slate)
 }
 
-#hero-contact-btn {
+#hero-contact-btn, #request-resume-btn {
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     width: 175px;
@@ -80,21 +79,21 @@ h3.font-calibre {
     transition: box-shadow 0.4s, transform 0.4s
 }
 
-#hero-contact-btn:hover {
+#hero-contact-btn:hover, #request-resume-btn:hover {
     cursor: pointer;
     box-shadow: 3px 3px;
     transform: translate(-3px, -3px);
 }
 
 
-.about {
+.about-section, .experience-section, .services-section {
     max-width: 1000px;
     display: block;
     overflow: hidden;
     margin: 0px auto;
 }
 
-#about-heading {
+#about-heading, #experience-heading, #services-heading {
     position: relative;
     font-size: 2.1rem;
     font-weight: 700;
@@ -102,7 +101,7 @@ h3.font-calibre {
     color: var(--white-slate);
 }
 
-#about-heading::after {
+#about-heading::after, #experience-heading::after, #services-heading::after {
     content: "";
     display: block;
     position: absolute;
@@ -111,6 +110,19 @@ h3.font-calibre {
     right: 0;
     top: 50%;
     background-color: var(--grey-slate);
+    transform: translateY(50%);
+}
+
+#experience-heading, #services-heading {
+    margin: 10rem 0 3rem;
+}
+
+#experience-heading::after {
+    width: calc(100% - 190px);
+}
+
+#services-heading::after {
+    width: calc(100% - 150px);
 }
 
 .about-container {
@@ -120,7 +132,7 @@ h3.font-calibre {
     margin-top: 2rem;
 }
 
-div>p {
+p {
     font-size: 18px;
     color: var(--grey-slate);
     margin: 0 0 18px;
@@ -137,17 +149,18 @@ img.portrait {
     margin: 7px 10px auto 0px;
     overflow: clip;
     filter: invert(2%) sepia(97%) saturate(876%) hue-rotate(79deg) brightness(103%) contrast(100%);
-    transition: box-shadow 0.4s, transform 0.4s;
+    transition: box-shadow 0.4s, transform 0.4s, filter 0.5s;
 }
 
 img.portrait:hover {
     transform: translate(-3px, -3px);
+    filter: invert(3%) sepia(25%) saturate(7452%) hue-rotate(178deg) brightness(97%) contrast(99%);
 }
 
 #portrait-wrapper {
     position: relative;
     min-width: 210px;
-    height: 200px;
+    height: 218px;
     margin: 0 auto;
     z-index: 1;
 }
@@ -163,3 +176,4 @@ img.portrait:hover {
     left: 10px;
     z-index: -1;
 }
+

@@ -25,9 +25,6 @@
     transition: color 0.5s;
 }
 
-.banner2:hover {
-    cursor: pointer;
-}
 
 .banner2::after {
     content: "";

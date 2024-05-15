@@ -9,14 +9,19 @@
     writing-mode: vertical-rl;
     color: var(--white-slate);
     padding-right: 2.5rem;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     transition: color 0.5s;
 }
 
-.banner:hover {
-    color: var(--secondary-color);
-    cursor: pointer;
+#email {
+    color: var(--white-slate);
 }
+
+#email:hover {
+    color: var(--secondary-color);
+    cursor: pointer; 
+}
+
 
 .banner::after {
     content: "";

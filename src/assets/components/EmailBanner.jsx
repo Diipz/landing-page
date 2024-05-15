@@ -7,11 +7,9 @@ export default function EmailBanner() {
         <Typography variant={"body1"} className="banner" sx={{
           fontSize: "0.9rem",
         }}> 
-            dip_patel100@hotmail.com
+            <span id="email">dip_patel100@hotmail.com</span>
         </Typography>
       </>
-        
-      
     )
   }
 
