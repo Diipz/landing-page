@@ -7,6 +7,7 @@ import EmailBanner from "./assets/components/EmailBanner";
 import LogoBanner from "./assets/components/LogoBanner";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MainContent from "./assets/components/MainContent";
+import Footer from "./assets/components/Footer";
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
           <LogoBanner />
         </>
       ) : null}
+      <Footer />
     </ThemeProvider>
   )
 }

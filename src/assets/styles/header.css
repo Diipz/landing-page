@@ -33,7 +33,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-weight: 100;
+    font-weight: 500;
     font-family: var(--font-mono);
 }
 
@@ -48,7 +48,7 @@
 .nav-selections {
     color: var(--white-slate);
     border: solid 2px var(--secondary-color);
-    padding: 4px 8px;
+    padding: 2px 6px;
     border-radius: 10px;
     cursor: pointer;
     transition: box-shadow 0.4s, transform 0.4s, color 0.4s;

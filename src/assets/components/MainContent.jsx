@@ -1,7 +1,11 @@
-import { Button, Typography } from "@mui/material"
+import { Button, Paper, Typography } from "@mui/material"
+import useMediaQuery from "@mui/material/useMediaQuery";
 import "../styles/main-content.css"
 
 export default function MainContent() {
+
+  const isTabletScreen = useMediaQuery(`(min-width:1125px)`);
+
   return (
     <div className="main-container">
       <section className="hero-section">
@@ -42,7 +46,7 @@ export default function MainContent() {
           Experience
         </Typography>
         <p>
-          In my early general practice years, I focused on conducting medication reviews and later expanded into chronic disease management. Calloborating with experienced professionals facilitated my deeper involvement in various aspects of general practice, including hormone replacement therapies, and eventually led me to explore different areas of interest.
+          In my early general practice years, I focused on conducting medication reviews and later expanded into chronic disease management. Calloborating with experienced professionals facilitated my deeper involvement in various aspects of general practice. This included meeting broader Quality & Outcome Framework targets and eventually led me to explore different areas of interest.
         </p>
         <p>
           Throughout my career, I have attained several qualifications, including certificates in psychiatric therapeutics and minor illness and injuries. Subsequently, I enrolled on the Master&#39;s in Advanced Practice program, which enabled me to conduct comprehensive minor illness clinics and reviews for anxiety and affective disorders. These experiences have enhanced my ability to work more autonomously and provide high-quality care.
@@ -55,6 +59,48 @@ export default function MainContent() {
         <Typography variant="h4" id="services-heading">
           Services
         </Typography>
+        {isTabletScreen ?(
+          <div className="services-card-container">
+          <div className="card-wrapper">
+            <Paper className="service-card" variant="outlined" square={false}>Hypertension</Paper>
+            <Paper className="service-card" variant="outlined" square={false}>Lipid therapy</Paper>
+          </div>
+          <div className="card-wrapper">
+            <Paper className="service-card" variant="outlined" square={false}>Asthma</Paper>
+            <Paper className="service-card" variant="outlined" square={false}>COPD</Paper>
+            <Paper className="service-card" variant="outlined" square={false}>Diabetes</Paper>
+          </div>
+          <div className="card-wrapper">
+            <Paper className="service-card" variant="outlined" square={false}>HRT</Paper>
+            <Paper className="service-card" variant="outlined" square={false}>Mental health</Paper>
+          </div>
+        </div>
+        ) : (
+          <div className="services-card-container">
+          <div className="card-wrapper">
+            <Paper className="service-card" variant="outlined" square={false}>Hypertension</Paper>
+            <Paper className="service-card" variant="outlined" square={false}>Lipid therapy</Paper>
+          </div>
+          <div className="card-wrapper">
+            <Paper className="service-card" variant="outlined" square={false}>Asthma</Paper>
+            <Paper className="service-card" variant="outlined" square={false}>COPD</Paper>
+          </div>
+          <div className="card-wrapper">
+            <Paper className="service-card" variant="outlined" square={false}>Diabetes</Paper>
+            <Paper className="service-card" variant="outlined" square={false}>HRT</Paper>
+            <Paper className="service-card" variant="outlined" square={false}>Mental health</Paper>
+          </div>
+        </div>
+        )}
+      </section>
+      <section className="contact-section">
+      <Typography variant="h4" id="contact-heading">
+          Get in Touch
+        </Typography>
+        <p id="contact-statement">Looking for a pharmacist for short or long term contracts? Wanting avoid agency fees and leverage ARRS funding? Whether you have a question or just want to say hi. Get in touch today!</p>
+        <Button variant="outlined" disableRipple id="contact-me-btn">
+          Contact Me
+        </Button>
       </section>
     </div>
   )
