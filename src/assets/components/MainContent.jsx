@@ -21,11 +21,13 @@ export default function MainContent() {
         <Typography variant="h5" className="hero-description">
         I specialize in chronic disease management offering contract services to general practices. With a focus on developing personalized care plans, medication management, patient education and overall health promotion.
         </Typography>
-        <Button variant="outlined" disableRipple id="hero-contact-btn">
-          Contact Me
-        </Button>
+        <a href="mailto:dip_patel100@hotmail.com">
+          <Button variant="outlined" disableRipple id="hero-contact-btn">
+            Contact Me
+          </Button>
+        </a>
       </section>
-      <section className="about-section" >
+      <section id="about-section" >
         <Typography variant="h4" id="about-heading">
           About Me
         </Typography>
@@ -41,7 +43,7 @@ export default function MainContent() {
           </div>
         </div>
       </section>
-      <section className="experience-section">
+      <section id="experience-section">
         <Typography variant="h4" id="experience-heading">
           Experience
         </Typography>
@@ -51,11 +53,13 @@ export default function MainContent() {
         <p>
           Throughout my career, I have attained several qualifications, including certificates in psychiatric therapeutics and minor illness and injuries. Subsequently, I enrolled on the Master&#39;s in Advanced Practice program, which enabled me to conduct comprehensive minor illness clinics and reviews for anxiety and affective disorders. These experiences have enhanced my ability to work more autonomously and provide high-quality care.
         </p>
-        <Button variant="outlined" disableRipple id="request-resume-btn">
-          Request Resume
-        </Button>
+        <a href="mailto:dip_patel100@hotmail.com">
+          <Button variant="outlined" disableRipple id="request-resume-btn">
+            Request Resume
+          </Button>
+        </a>
       </section>
-      <section className="services-section">
+      <section id="services-section">
         <Typography variant="h4" id="services-heading">
           Services
         </Typography>
@@ -93,14 +97,16 @@ export default function MainContent() {
         </div>
         )}
       </section>
-      <section className="contact-section">
+      <section id="contact-section">
       <Typography variant="h4" id="contact-heading">
           Get in Touch
         </Typography>
-        <p id="contact-statement">Looking for a pharmacist for short or long term contracts? Wanting avoid agency fees and leverage ARRS funding? Whether you have a question or just want to say hi. Get in touch today!</p>
-        <Button variant="outlined" disableRipple id="contact-me-btn">
-          Contact Me
-        </Button>
+        <p id="contact-statement">Looking for a pharmacist for short or long term contracts? Wanting to avoid agency fees and leverage ARRS funding? Whether you have a question or just want to say hi. Feel free to contact me!</p>
+        <a href="mailto:dip_patel100@hotmail.com">
+          <Button variant="outlined" disableRipple id="contact-me-btn">
+            Contact Me
+          </Button>
+        </a>
       </section>
     </div>
   )

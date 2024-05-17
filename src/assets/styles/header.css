@@ -7,6 +7,10 @@
     box-shadow: 0 10px 30px -10px #020c1bb3;
 }
 
+a {
+    text-decoration: none;
+}
+
 .icon-container {
     width: 80px;
     height: 100%;

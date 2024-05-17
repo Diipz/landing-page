@@ -75,10 +75,10 @@ export default function Header() {
           </div>
         ) : (
           <div className="navbar">
-            <Typography variant="h6" className="nav-selections">About</Typography>
-            <Typography variant="h6" className="nav-selections">Experience</Typography>
-            <Typography variant="h6" className="nav-selections">Services</Typography>
-            <Typography variant="h6" className="nav-selections">Contact</Typography>
+            <a href="#about-section"><Typography variant="h6" className="nav-selections" >About</Typography></a>
+            <a href="#experience-section"><Typography variant="h6" className="nav-selections">Experience</Typography></a>
+            <a href="#services-section"><Typography variant="h6" className="nav-selections">Services</Typography></a>
+            <a href="#contact-section"><Typography variant="h6" className="nav-selections">Contact</Typography></a>
           </div>
         )}
       </Box>

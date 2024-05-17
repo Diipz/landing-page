@@ -87,7 +87,7 @@ h3.font-calibre {
 }
 
 
-.about-section, .experience-section, .services-section {
+#about-section, #experience-section, #services-section {
     max-width: 1000px;
     display: block;
     overflow: hidden;
@@ -222,7 +222,7 @@ div.service-card:hover {
     color: var(--primary-color);
 }
 
-.contact-section {
+#contact-section {
     max-width: 800px;
     overflow: hidden;
     margin: 0px auto;
@@ -240,7 +240,7 @@ div.service-card:hover {
     color: var(--white-slate);
 }
 
-.contact-section > p {
+#contact-section > p {
     text-align: center;
     margin-top: 1.5rem;
 }
