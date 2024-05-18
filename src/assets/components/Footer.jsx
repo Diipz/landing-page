@@ -7,7 +7,6 @@ export default function Footer() {
         <Typography variant="subtitle2" id="footer-text">
             Developed by Dipesh Patel
         </Typography>
-        <img id="github-logo" src="/public/images/github-mark-white.svg" alt="github" />
     </div>
   )
 }

@@ -16,8 +16,6 @@ const options = [
   'Contact',
 ];
 
-
-
 export default function Header() {
 
   const isMobileScreen = useMediaQuery(`(max-width:600px)`);
@@ -34,14 +32,14 @@ export default function Header() {
   return (
     <>
       <Box className="header-container">
-        <div className="icon-container">
+        <a href="." className="icon-container">
           <HexagonRoundedIcon className="hexagon" sx={{
             fontSize: 80
           }} />
           <h1 className="logo-letter">
             D
           </h1>
-        </div>
+        </a>
         {isMobileScreen ? (
           <div className="menu">
             <IconButton

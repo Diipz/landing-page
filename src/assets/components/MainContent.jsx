@@ -34,8 +34,8 @@ export default function MainContent() {
         <div className="about-container">
           <div className="p-wrapper">
             <p>Hello! My name is Dipesh, and I&#39;m a <span>senior clinical pharmacist</span>. I started my general practice journey in 2018 as an <span>independent prescriber</span>. </p>
-            <p>Fast-forward to today, and I&#39;ve had the privilege of working with esteemed colleagues in both private and public sectors. I&#39;m enthusiastic about patient-centred care, focusing on <span>chronic disease management</span> with a special interest in <span>mental health</span>.</p>
-            <p>I&#39;m currently offering contract services for general practices. Primary care networks can take advantage of the <span>Additional Roles Reimbursement Scheme</span> (ARRS) and contact me directly as a cost-effective alternative to using agencies.</p>
+            <p>Fast-forward to today, and I&#39;ve acquired a variety of skills and had the privilege of working with prestigious colleagues. I&#39;m enthusiastic about patient-centred care, focusing on <span>chronic disease management</span> with a special interest in <span>mental health</span>.</p>
+            <p>I&#39;m currently offering <span>clinical services</span> to general practices seeking support. Whether it is to complement existing teams or work independently.</p>
           </div>
           <div id="portrait-wrapper">
             <img src="/public/images/portrait.webp" alt="portrait" className="portrait" />
@@ -48,12 +48,12 @@ export default function MainContent() {
           Experience
         </Typography>
         <p>
-          In my early general practice years, I focused on conducting medication reviews and later expanded into chronic disease management. Calloborating with experienced professionals facilitated my deeper involvement in various aspects of general practice. This included meeting broader Quality & Outcome Framework targets and eventually led me to explore different areas of interest.
+          In my early general practice years, I focused on conducting medication reviews and later expanded into chronic disease management. Collaborating with experienced professionals facilitated my deeper involvement in various aspects of general practice. This included meeting broader Quality & Outcome Framework targets and eventually led me to explore different areas of interest.
         </p>
         <p>
-          Throughout my career, I have attained several qualifications, including certificates in psychiatric therapeutics and minor illness and injuries. Subsequently, I enrolled on the Master&#39;s in Advanced Practice program, which enabled me to conduct comprehensive minor illness clinics and reviews for anxiety and affective disorders. These experiences have enhanced my ability to work more autonomously and provide high-quality care.
+          Throughout my career, I have attained several qualifications, including certificates in psychiatric therapeutics and minor illness & injuries. Subsequently, I enrolled on the Master&#39;s in Advanced Practice program, which enabled me to conduct comprehensive minor illness clinics and reviews for anxiety and affective disorders. These experiences have enhanced my ability to work autonomously and provide high-quality care.
         </p>
-        <a href="mailto:dip_patel100@hotmail.com">
+        <a href="mailto:dip_patel100@hotmail.com?subject=Resume Request">
           <Button variant="outlined" disableRipple id="request-resume-btn">
             Request Resume
           </Button>
@@ -101,7 +101,7 @@ export default function MainContent() {
       <Typography variant="h4" id="contact-heading">
           Get in Touch
         </Typography>
-        <p id="contact-statement">Looking for a pharmacist for short or long term contracts? Wanting to avoid agency fees and leverage ARRS funding? Whether you have a question or just want to say hi. Feel free to contact me!</p>
+        <p id="contact-statement">Looking for a pharmacist for short or long-term contracts? Wanting to avoid agency fees or leverage ARRS funding? Whether you have a question or just want to say hi. Feel free to reach out to me.</p>
         <a href="mailto:dip_patel100@hotmail.com">
           <Button variant="outlined" disableRipple id="contact-me-btn">
             Contact Me
