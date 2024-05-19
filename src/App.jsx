@@ -9,7 +9,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import MainContent from "./assets/components/MainContent";
 import Footer from "./assets/components/Footer";
 
-function App() {
+
+export default function App() {
 
   const isTabletScreen = useMediaQuery(`(min-width:801px) and (min-height:900px)`);
 
@@ -50,4 +51,3 @@ function App() {
   )
 }
 
-export default App

@@ -19,7 +19,7 @@ export default function MainContent() {
           A clinical pharmacist.
         </h3>
         <Typography variant="h5" className="hero-description">
-        I specialize in chronic disease management offering contract services to general practices. With a focus on developing personalized care plans, medication management, patient education and overall health promotion.
+        I specialise in chronic disease management offering contract services to general practices. With a focus on developing personalised care plans, medication management and overall health promotion.
         </Typography>
         <a href="mailto:dip_patel100@hotmail.com">
           <Button variant="outlined" disableRipple id="hero-contact-btn">
@@ -35,7 +35,7 @@ export default function MainContent() {
           <div className="p-wrapper">
             <p>Hello! My name is Dipesh, and I&#39;m a <span>senior clinical pharmacist</span>. I started my general practice journey in 2018 as an <span>independent prescriber</span>. </p>
             <p>Fast-forward to today, and I&#39;ve acquired a variety of skills and had the privilege of working with prestigious colleagues. I&#39;m enthusiastic about patient-centred care, focusing on <span>chronic disease management</span> with a special interest in <span>mental health</span>.</p>
-            <p>I&#39;m currently offering <span>clinical services</span> to general practices seeking support. Whether it is to complement existing teams or work independently.</p>
+            <p>I&#39;m currently offering <span>clinical services</span> to general practices seeking support. Whether it is to complement existing teams or serve in a more independent role</p>
           </div>
           <div id="portrait-wrapper">
             <img src="/public/images/portrait.webp" alt="portrait" className="portrait" />
@@ -51,7 +51,7 @@ export default function MainContent() {
           In my early general practice years, I focused on conducting medication reviews and later expanded into chronic disease management. Collaborating with experienced professionals facilitated my deeper involvement in various aspects of general practice. This included meeting broader Quality & Outcome Framework targets and eventually led me to explore different areas of interest.
         </p>
         <p>
-          Throughout my career, I have attained several qualifications, including certificates in psychiatric therapeutics and minor illness & injuries. Subsequently, I enrolled on the Master&#39;s in Advanced Practice program, which enabled me to conduct comprehensive minor illness clinics and reviews for anxiety and affective disorders. These experiences have enhanced my ability to work autonomously and provide high-quality care.
+          Throughout my career, I have attained several qualifications, including certificates in psychiatric therapeutics, minor illness and injuries. Subsequently, I enrolled on the Master&#39;s in Advanced Practice program, which enabled me to conduct comprehensive minor illness clinics and reviews for anxiety and affective disorders. These experiences have enhanced my ability to work autonomously and provide high-quality care.
         </p>
         <a href="mailto:dip_patel100@hotmail.com?subject=Resume Request">
           <Button variant="outlined" disableRipple id="request-resume-btn">
@@ -101,7 +101,7 @@ export default function MainContent() {
       <Typography variant="h4" id="contact-heading">
           Get in Touch
         </Typography>
-        <p id="contact-statement">Looking for a pharmacist for short or long-term contracts? Wanting to avoid agency fees or leverage ARRS funding? Whether you have a question or just want to say hi. Feel free to reach out to me.</p>
+        <p id="contact-statement">Looking for a pharmacist for short or long-term contracts? Wanting to avoid agency fees or leverage ARRS funding? Whether you have a question or just want to say hi. Feel free to contact me.</p>
         <a href="mailto:dip_patel100@hotmail.com">
           <Button variant="outlined" disableRipple id="contact-me-btn">
             Contact Me
