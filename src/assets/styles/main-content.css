@@ -92,8 +92,10 @@ h3.font-calibre {
     max-width: 1000px;
     display: block;
     overflow: hidden;
-    margin: 0px auto;
+    margin: 12rem auto;
 }
+
+
 
 #about-heading, #experience-heading, #services-heading {
     position: relative;
@@ -120,11 +122,11 @@ h3.font-calibre {
 }
 
 #experience-heading {
-    margin: 12rem 0 3rem;
+    margin: 0 0 3rem;
 }
 
 #services-heading {
-    margin: 14rem 0 5rem;
+    margin: 0 0 5rem;
 }
 
 #experience-heading::after {
