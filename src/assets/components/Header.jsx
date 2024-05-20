@@ -9,12 +9,6 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import useMediaQuery  from "@mui/material/useMediaQuery";
 import { useState } from "react";
 
-const options = [
-  'About',
-  'Experience',
-  'Services',
-  'Contact',
-];
 
 export default function Header() {
 
@@ -63,12 +57,12 @@ export default function Header() {
               anchorEl={anchorEl}
               open={open}
               onClose={handleClose}            
-            >
-              {options.map((option) => (
-                <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-                  {option}
-                </MenuItem>
-              ))}
+            > 
+              <a href="#about-section"><MenuItem onClick={handleClose}>About</MenuItem></a>
+              <a href="#experience-section"><MenuItem onClick={handleClose}>Experience</MenuItem></a>
+              <a href="#services-section"><MenuItem onClick={handleClose}>Services</MenuItem></a>
+              <a href="#contact-section"><MenuItem onClick={handleClose}>Contact</MenuItem></a>
+              
             </Menu>
           </div>
         ) : (

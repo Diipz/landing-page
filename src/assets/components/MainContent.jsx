@@ -38,7 +38,7 @@ export default function MainContent() {
             <p>I&#39;m currently offering <span>clinical services</span> to general practices seeking support. Whether it is to complement existing teams or serve in a more independent role</p>
           </div>
           <div id="portrait-wrapper">
-            <img src="/public/images/portrait.webp" alt="portrait" className="portrait" />
+            <img src="/images/portrait.webp" alt="portrait" className="portrait" />
             <div id="portrait-frame"></div>
           </div>
         </div>
