@@ -9,15 +9,6 @@
     
 }
 
-@media screen and (max-width: 801px) {
-    .main-container {
-        margin: 0 3rem;
-    }
-    .about-container {
-        flex-wrap: wrap;
-    }
-}
-
 
 .hero-section {
     height: 100vh;
@@ -92,10 +83,13 @@ h3.font-calibre {
     max-width: 1000px;
     display: block;
     overflow: hidden;
-    margin: 12rem auto;
+    margin: 0 auto;
+    padding-top: 12rem;
 }
 
-
+#about-section {
+    padding-top: 3rem;
+}
 
 #about-heading, #experience-heading, #services-heading {
     position: relative;
@@ -228,7 +222,8 @@ div.service-card:hover {
 #contact-section {
     max-width: 800px;
     overflow: hidden;
-    margin: 0px auto;
+    margin: 0 auto;
+    padding-top: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,7 +233,6 @@ div.service-card:hover {
 #contact-heading {
     font-size: 2.1rem;
     font-weight: 700;
-    margin-top: 14rem;
     font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     color: var(--white-slate);
 }
@@ -247,4 +241,30 @@ div.service-card:hover {
     text-align: center;
     margin-top: 1.5rem;
 }
+
+@media screen and (max-width: 801px) {
+    .main-container {
+        margin: 0 3rem;
+    }
+    .about-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (480px <= width <= 801px) {
+    #services-section, #experience-section {
+        padding-top: 6rem;
+    }
+    #about-section {
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #services-section, #about-section, #experience-section {
+        padding-top: 60px;
+    }
+}
+
+
 
