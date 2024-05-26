@@ -10,6 +10,7 @@ import MainContent from "./assets/components/MainContent";
 import Footer from "./assets/components/Footer";
 
 
+
 export default function App() {
 
   const isTabletScreen = useMediaQuery(`(min-width:801px) and (min-height:900px)`);

@@ -1,11 +1,26 @@
 .header-container {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     height: 100px;
     padding: 2.5rem 1rem;
-    opacity: 0.75;
+    background-color: var(--primary-color);
     box-shadow: 0 10px 30px -10px #020c1bb3;
+    transition-property: all; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.5s; 
+    z-index: 10;
 }
+
+.header-hidden {
+    top: -100px;
+}
+
+.header-visible {
+    top: 0;
+}
+
 
 a {
     text-decoration: none;

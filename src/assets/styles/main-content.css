@@ -6,7 +6,7 @@
     min-height: 100vh;
     display: block;
     margin: 0 10rem;
-    
+    overflow: hidden;
 }
 
 
@@ -19,7 +19,6 @@
     align-items: flex-start;
     padding-bottom: 15vh;
     margin: 0px auto;
-    overflow: hidden;
 }
 
 
