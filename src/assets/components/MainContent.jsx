@@ -21,7 +21,7 @@ export default function MainContent() {
         <Typography variant="h5" className="hero-description">
         I specialise in chronic disease management offering contract services to general practices. With a focus on developing personalised care plans, medication management and overall health promotion.
         </Typography>
-        <a href="mailto:dip_patel100@hotmail.com">
+        <a href="mailto:dip100patel@gmail.com">
           <Button variant="outlined" disableRipple id="hero-contact-btn">
             Contact Me
           </Button>
@@ -53,7 +53,7 @@ export default function MainContent() {
         <p>
           Throughout my career, I have attained several qualifications, including certificates in psychiatric therapeutics, minor illness and injuries. Subsequently, I enrolled on the Master&#39;s in Advanced Practice program, which enabled me to conduct comprehensive minor illness clinics and reviews for anxiety and affective disorders. These experiences have enhanced my ability to work autonomously and provide high-quality care.
         </p>
-        <a href="mailto:dip_patel100@hotmail.com?subject=Resume Request">
+        <a href="mailto:dip100patel@gmail.com?subject=Resume Request">
           <Button variant="outlined" disableRipple id="request-resume-btn">
             Request Resume
           </Button>
@@ -102,7 +102,7 @@ export default function MainContent() {
           Get in Touch
         </Typography>
         <p id="contact-statement">Looking for a pharmacist for short or long-term contracts? Wanting to avoid agency fees or leverage ARRS funding? Whether you have a question or just want to say hi. Feel free to contact me.</p>
-        <a href="mailto:dip_patel100@hotmail.com">
+        <a href="mailto:dip100patel@gmail.com">
           <Button variant="outlined" disableRipple id="contact-me-btn">
             Contact Me
           </Button>
