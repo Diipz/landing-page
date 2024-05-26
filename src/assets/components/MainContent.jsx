@@ -19,7 +19,7 @@ export default function MainContent() {
           A clinical pharmacist.
         </h3>
         <Typography variant="h5" className="hero-description">
-        I specialise in chronic disease management offering contract services to general practices. With a focus on developing personalised care plans, medication management and overall health promotion.
+        I specialise in chronic disease management and offer contract services to general practices. My focus is on developing personalised care plans, managing medication and overall health promotion.
         </Typography>
         <a href="mailto:dip100patel@gmail.com">
           <Button variant="outlined" disableRipple id="hero-contact-btn">
@@ -48,10 +48,10 @@ export default function MainContent() {
           Experience
         </Typography>
         <p>
-          In my early general practice years, I focused on conducting medication reviews and later expanded into chronic disease management. Collaborating with experienced professionals facilitated my deeper involvement in various aspects of general practice. This included meeting broader Quality & Outcome Framework targets and eventually led me to explore different areas of interest.
+          In my early general practice years, I focused on conducting medication reviews and later expanded into chronic disease management. Collaborating with experienced professionals facilitated my deeper involvement in various aspects of general practice. This included meeting broader Quality & Outcome Framework targets and eventually led me to explore other areas of interest.
         </p>
         <p>
-          Throughout my career, I have attained several qualifications, including certificates in psychiatric therapeutics, minor illness and injuries. Subsequently, I enrolled on the Master&#39;s in Advanced Practice program, which enabled me to conduct comprehensive minor illness clinics and reviews for anxiety and affective disorders. These experiences have enhanced my ability to work autonomously and provide high-quality care.
+          Throughout my career, I have attained several qualifications, including certification in psychiatric therapeutics, minor illness and injuries. Subsequently, I enrolled in the Master&#39;s in Advanced Practice program, which expanded my ability to conduct a wider range of clinics, including those focused on anxiety and affective disorders. These experiences have enhanced my ability to work autonomously and provide high-quality care.
         </p>
         <a href="mailto:dip100patel@gmail.com?subject=Resume Request">
           <Button variant="outlined" disableRipple id="request-resume-btn">
@@ -101,7 +101,7 @@ export default function MainContent() {
       <Typography variant="h4" id="contact-heading">
           Get in Touch
         </Typography>
-        <p id="contact-statement">Looking for a pharmacist for short or long-term contracts? Wanting to avoid agency fees or leverage ARRS funding? Whether you have a question or just want to say hi. Feel free to contact me.</p>
+        <p id="contact-statement">Looking for a pharmacist for short or long-term contracts? Wanting to avoid agency fees or utilise ARRS funding? Whether you have a question or just want to say hi. Feel free to get in touch.</p>
         <a href="mailto:dip100patel@gmail.com">
           <Button variant="outlined" disableRipple id="contact-me-btn">
             Contact Me
