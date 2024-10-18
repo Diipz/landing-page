@@ -168,7 +168,7 @@ img.portrait {
 }
 
 img.portrait:hover {
-  transform: translate(-3px, -3px);
+  transform: scaleX(-1) translate(3px, -3px);
   filter: invert(3%) sepia(25%) saturate(7452%) hue-rotate(178deg)
     brightness(97%) contrast(99%);
 }
