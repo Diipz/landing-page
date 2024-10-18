@@ -38,7 +38,7 @@ export default function MainContent() {
             <p>I&#39;m currently offering <span>clinical services</span> to general practices seeking support. Whether it is to complement existing teams or serve in a more independent role</p>
           </div>
           <div id="portrait-wrapper">
-            <img src="/images/portrait.webp" alt="portrait" className="portrait" />
+            <img src="/images/portrait_inv.webp" alt="portrait" className="portrait" />
             <div id="portrait-frame"></div>
           </div>
         </div>
@@ -53,9 +53,9 @@ export default function MainContent() {
         <p>
           Throughout my career, I have attained several qualifications, including certification in psychiatric therapeutics, minor illness and injuries. Subsequently, I enrolled in the Master&#39;s in Advanced Practice program, which expanded my ability to conduct a wider range of clinics, including those focused on anxiety and affective disorders. These experiences have enhanced my ability to work autonomously and provide high-quality care.
         </p>
-        <a href="mailto:dip100patel@gmail.com?subject=Resume Request">
+        <a href="/resume.pdf" download>
           <Button variant="outlined" disableRipple id="request-resume-btn">
-            Request Resume
+            Resume
           </Button>
         </a>
       </section>
