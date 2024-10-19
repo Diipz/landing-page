@@ -1,0 +1,38 @@
+/* Loader.css */
+.container {
+  width: max-content;
+  max-width: 100px;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  fill: none;
+}
+
+/* Stroke animation */
+.stroke-animation {
+  stroke-dasharray: 270; /* Ensure this matches your path length */
+  stroke-dashoffset: 270; /* Start fully hidden */
+  animation: draw 2.5s ease forwards, fadeIn 0.5s 2s forwards; /* 2.5s for drawing, 0.5s for fade in */
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 270; /* Start fully hidden */
+  }
+  100% {
+    stroke-dashoffset: 0; /* End fully drawn */
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}

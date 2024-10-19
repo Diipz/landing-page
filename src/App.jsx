@@ -8,10 +8,17 @@ import LogoBanner from "./assets/components/LogoBanner";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MainContent from "./assets/components/MainContent";
 import Footer from "./assets/components/Footer";
+import Loader from "./assets/components/Loader";
+import { useState, useEffect } from 'react';
 
 
 
 export default function App() {
+
+  const [loading, setLoading] = useState(true);
+  const [fadeInHeader, setFadeInHeader] = useState(false);
+  const [fadeInContent, setFadeInContent] = useState(false);
+  const [fadeInSidebar, setFadeInSidebar] = useState(false);
 
   const isTabletScreen = useMediaQuery(`(min-width:801px) and (min-height:900px)`);
 
@@ -36,16 +43,56 @@ export default function App() {
     }
   })
 
-  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000); // 5 seconds loading
+
+    return () => clearTimeout(timer); // Cleanup the timer on unmount
+  }, []);
+
+  useEffect(() => {
+    if (!loading) {
+      const headerTimer = setTimeout(() => {
+        setFadeInHeader(true);
+      }, 500); // Delay for header
+
+      const contentTimer = setTimeout(() => {
+        setFadeInContent(true);
+      }, 1000); // Delay for content
+
+      const sidebarTimer = setTimeout(() => {
+        setFadeInSidebar(true);
+      }, 1500); // Delay for footer
+
+      return () => {
+        clearTimeout(headerTimer);
+        clearTimeout(contentTimer);
+        clearTimeout(sidebarTimer);
+      };
+    }
+  }, [loading]);
+
+
+  if (loading) {
+    return (
+      <ThemeProvider theme={theme}>
+      <div className="loader-container">
+        <Loader />
+      </div>
+      </ThemeProvider>
+    );
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Header />
-      <MainContent />
+      <Header className={fadeInHeader ? 'fade-in-header' : 'hidden-main'} />
+      <MainContent className={fadeInContent ? 'fade-in' : 'hidden-main'} />
       {isTabletScreen ? (
         <>
-          <EmailBanner />
-          <LogoBanner />
+          <EmailBanner className={fadeInSidebar ? 'fade-in' : 'hidden-main'} />
+          <LogoBanner className={fadeInSidebar ? 'fade-in' : 'hidden-main'} />
         </>
       ) : null}
       <Footer />

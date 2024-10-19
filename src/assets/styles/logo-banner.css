@@ -1,36 +1,34 @@
 .banner2-wrapper {
-    position: fixed;
-    left: 0;
-    bottom: 118px;
-    padding-left: 1.5rem;
+  position: fixed;
+  left: 0;
+  bottom: 118px;
+  padding-left: 1.5rem;
 }
 
 .pharmacy-logo {
-    width: 77px;
-    height: 220px;
+  width: 77px;
+  height: 220px;
 }
-
 
 .banner2 {
-    position: fixed;
-    height: 400px;
-    display: flex;
-    justify-content: end;
-    left: 0;
-    bottom: 0;
-    writing-mode: vertical-rl;
-    color: var(--white-slate);
-    padding-left: 3.8rem;
-    letter-spacing: 0.2em;
-    transition: color 0.5s;
+  position: fixed;
+  height: 400px;
+  display: flex;
+  justify-content: end;
+  left: 0;
+  bottom: 0;
+  writing-mode: vertical-rl;
+  color: var(--white-slate);
+  padding-left: 3.8rem;
+  letter-spacing: 0.2em;
+  transition: color 0.5s;
 }
 
-
 .banner2::after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 100px;
-    margin: 0px auto;
-    background-color: var(--white-slate);
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100px;
+  margin: 0px auto;
+  background-color: var(--white-slate);
 }

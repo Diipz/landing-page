@@ -1,13 +1,18 @@
 import { Button, Paper, Typography } from "@mui/material"
 import useMediaQuery from "@mui/material/useMediaQuery";
 import "../styles/main-content.css"
+import PropTypes from "prop-types";
 
-export default function MainContent() {
+export default function MainContent({ className}) {
+
+  MainContent.propTypes = {
+    className: PropTypes.string,
+  };
 
   const isTabletScreen = useMediaQuery(`(min-width:1125px)`);
 
   return (
-    <div className="main-container">
+    <div className={`main-container ${className}`}>
       <section className="hero-section">
         <h2 className="hero-intro">
             Hi, my name is

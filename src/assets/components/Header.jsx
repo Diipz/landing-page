@@ -8,10 +8,15 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import useMediaQuery  from "@mui/material/useMediaQuery";
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 
 
-export default function Header() {
+export default function Header({ className }) {
+
+  Header.propTypes = {
+    className: PropTypes.string,
+  };
 
   const isMobileScreen = useMediaQuery(`(max-width:600px)`);
 
@@ -50,7 +55,7 @@ export default function Header() {
 
 
   return (
-    <Box className={`header-container ${showHeader ? "header-visible" : "header-hidden"}`}>
+    <Box className={`header-container ${showHeader ? "header-visible" : "header-hidden"} ${className}`}>
       <a href="." className="icon-container">
         <HexagonRoundedIcon className="hexagon" sx={{
           fontSize: 80
