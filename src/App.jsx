@@ -59,11 +59,11 @@ export default function App() {
 
       const contentTimer = setTimeout(() => {
         setFadeInContent(true);
-      }, 1000); 
+      }, 1500); 
 
       const sidebarTimer = setTimeout(() => {
         setFadeInSidebar(true);
-      }, 1500); 
+      }, 2500); 
 
       return () => {
         clearTimeout(headerTimer);
