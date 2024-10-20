@@ -1,20 +1,26 @@
 #footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    height: 100px;
-    margin-top: 14rem;
-    padding-bottom: 2rem;
-} 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 100px;
+  margin-top: 14rem;
+  padding-bottom: 2rem;
+}
 
 #footer-text {
-    text-align: center;
-    letter-spacing: 1px;
-    color: var(--grey-slate);
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--grey-slate);
 }
 
-#github-logo {
-    height: 25px;
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.socials-container > a > img {
+  filter: invert(20%);
+}

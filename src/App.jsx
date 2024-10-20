@@ -46,24 +46,24 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); // 5 seconds loading
+    }, 4500);
 
-    return () => clearTimeout(timer); // Cleanup the timer on unmount
+    return () => clearTimeout(timer); 
   }, []);
 
   useEffect(() => {
     if (!loading) {
       const headerTimer = setTimeout(() => {
         setFadeInHeader(true);
-      }, 500); // Delay for header
+      }, 500); 
 
       const contentTimer = setTimeout(() => {
         setFadeInContent(true);
-      }, 1000); // Delay for content
+      }, 1000); 
 
       const sidebarTimer = setTimeout(() => {
         setFadeInSidebar(true);
-      }, 1500); // Delay for footer
+      }, 1500); 
 
       return () => {
         clearTimeout(headerTimer);
