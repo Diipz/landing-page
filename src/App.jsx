@@ -10,6 +10,7 @@ import MainContent from "./assets/components/MainContent";
 import Footer from "./assets/components/Footer";
 import Loader from "./assets/components/Loader";
 import { useState, useEffect } from 'react';
+import SocialsFooter from "./assets/components/SocialsFooter";
 
 
 
@@ -94,7 +95,7 @@ export default function App() {
           <EmailBanner className={fadeInSidebar ? 'fade-in' : 'hidden-main'} />
           <LogoBanner className={fadeInSidebar ? 'fade-in' : 'hidden-main'} />
         </>
-      ) : null}
+      ) : <SocialsFooter />}
       <Footer />
     </ThemeProvider>
   )

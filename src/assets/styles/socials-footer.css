@@ -1,0 +1,13 @@
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-container > a > img {
+  filter: invert(20%);
+}
+
+a > img:hover {
+  cursor: pointer;
+}
