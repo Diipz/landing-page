@@ -2,22 +2,18 @@
   position: fixed;
   left: 0;
   bottom: 118px;
-  padding-left: 1.5rem;
+  padding-left: 1.7rem;
 }
 
 .socials-banner {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding-left: 1.2rem;
-  padding-bottom: 1.25rem;
+  gap: 2.2rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1rem;
 }
 
-.socials-banner > a > img {
-  filter: invert(60%);
-}
-
-.socials-banner > a > img:hover {
+.socials-banner > a > svg:hover {
   cursor: pointer;
   filter: brightness(0) saturate(100%) invert(62%) sepia(45%) saturate(2000%)
     hue-rotate(175deg) brightness(90%) contrast(90%);
@@ -43,5 +39,5 @@
   width: 2px;
   height: 100px;
   margin: 0px auto;
-  background-color: var(--white-slate);
+  background-color: var(--grey-slate);
 }

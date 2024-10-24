@@ -1,49 +1,48 @@
 .banner {
-    position: fixed;
-    height: 400px;
-    display: flex;
-    justify-content: end;
-    right: 0;
-    bottom: 0;
-    gap: 2rem;
-    writing-mode: vertical-rl;
-    color: var(--white-slate);
-    padding-right: 2.5rem;
-    letter-spacing: 0.15em;
-    transition: color 0.5s;
+  position: fixed;
+  height: 400px;
+  display: flex;
+  justify-content: end;
+  right: 0;
+  bottom: 0;
+  gap: 2rem;
+  writing-mode: vertical-rl;
+  color: var(--grey-slate);
+  padding-right: 2.5rem;
+  letter-spacing: 0.15em;
+  transition: color 0.5s;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #email {
-    color: var(--white-slate);
+  color: var(--grey-slate);
 }
 
 #email:hover {
-    color: var(--secondary-color);
-    cursor: pointer; 
+  color: var(--secondary-color);
+  cursor: pointer;
 }
 
-
 .banner::after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 100px;
-    margin: 0px auto;
-    background-color: var(--white-slate);
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100px;
+  margin: 0px auto;
+  background-color: var(--grey-slate);
 }
 
 ul {
-    background-color: #112240;
+  background-color: #112240;
 }
 
 .MuiButtonBase-root.MuiMenuItem-root {
-    color: var(--white-slate);
+  color: var(--white-slate);
 }
 
 .MuiButtonBase-root.MuiMenuItem-root:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }

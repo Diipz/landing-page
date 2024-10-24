@@ -9,13 +9,14 @@ export default function EmailBanner({ className }) {
     };
 
     return (
-      <a href="mailto:dip100patel@gmail.com">
+      <div>
         <Typography variant={"body1"} className={`banner ${className}`} sx={{
           fontSize: "0.9rem",
-        }}> 
-            <span id="email">dip100patel@gmail.com</span>
+        }}>
+          <a href="mailto:dip100patel@gmail.com"><span id="email">dip100patel@gmail.com</span>
+          </a> 
         </Typography>
-      </a>
+      </div>
     )
   }
 
